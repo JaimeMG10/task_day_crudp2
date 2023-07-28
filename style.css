@@ -1,0 +1,31 @@
+.main-container {
+  border-radius: 15px;
+  border-width: 1px;
+  border: solid;
+  overflow: hidden; /* Todo lo que se salga de main container lo oculta */
+}
+
+.section-container {
+  padding: 30px; /* Espaciado desde el borde hasta el contenido */
+}
+
+.section-container > h3 {
+  margin: 0;
+}
+
+#create-form-section > h3 {
+  color: white;
+}
+
+#create-form-section {
+  background-color: #4fa4fa;
+}
+
+#list-todos-section {
+  background-color: #f0f5fb;
+}
+
+
+
+
+
