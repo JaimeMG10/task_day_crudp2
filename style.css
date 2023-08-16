@@ -1,8 +1,40 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 90px;
+  background-color: #232222;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-container {
+  background-color: rgb(195, 193, 193);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
 .main-container {
   border-radius: 15px;
   border-width: 1px;
   border: solid;
   overflow: hidden; /* Todo lo que se salga de main container lo oculta */
+  max-width: 900px;
 }
 
 .section-container {
@@ -25,7 +57,93 @@
   background-color: #f0f5fb;
 }
 
+#taskForm {
+  margin-top: 30px;
+}
 
+.btn-submit {
+  border-radius: 30px;
+  width: 60px;
+  height: 25px;
+  border: none;
+}
 
+#task-name {
+  border-radius: 10px;
+  border: none;
+  height: 25px;
+}
 
+#task-list {
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
 
+.task-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-item p {
+  border: 1px solid;
+  border-color: #ced6dd;
+  margin: 0;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.task-item-name {
+  flex: 1;
+}
+
+.btn-delete {
+  background: transparent;
+  border: none;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+}
+
+.btn-status {
+  background: transparent;
+  border: none;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+}
+
+.btn-status:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color:  #cfd0cd;
+  padding: 10px 0;
+}
+.social-net-container{
+  display: flex;
+  align-items: center;
+}
+.social-net-icon{
+  width: 20px;
+  height: 20px;
+}

@@ -5,19 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header>
+      <div class="icon-container">
+        <img
+          class="icon"
+          src="https://cdn-icons-png.flaticon.com/512/4697/4697260.png"
+        />
+      </div>
+      <p>Welcome To The Day Crud</p>
+    </header>
     <main class="main-container">
       <section class="section-container" id="create-form-section">
-        <h3>Create new task</h3>
-        <form class="form-todos">
+        <h3>Create New Task</h3>
+        <form class="form-todos" id="taskForm">
           <input type="text" name="task-name" id="task-name" />
-          <button type="submit">Add</button>
+          <button type="submit" class="btn-submit">Add</button>
         </form>
       </section>
       <section class="section-container" id="list-todos-section">
         <h3>Your tasks</h3>
+        <ul id="task-list"></ul>
       </section>
     </main>
+    <footer>
+      <p>Creador por Jaime Martínez Guerra</p>
+      <p>2023-07-25</p>
+      <a href="https://www.instagram.com/jaimemartinezg1/">
+        <div class="social-net-container">
+          <img
+            class="social-net-icon"
+            src="https://static.vecteezy.com/system/resources/previews/023/986/555/original/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.png"
+          />
+          <span>@jaimemartinezg1</span>
+        </div>
+      </a>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
