@@ -29,12 +29,19 @@ header {
   width: 24px;
 }
 
+main {
+  height: calc(100vh - 234px);
+  overflow-y: scroll;
+}
+
 .main-container {
   border-radius: 15px;
   border-width: 1px;
   border: solid;
   overflow: hidden; /* Todo lo que se salga de main container lo oculta */
   max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-container {
@@ -130,20 +137,23 @@ header {
   }
 }
 
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
-  background-color:  #cfd0cd;
+  background-color: #cfd0cd;
   padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
 }
-.social-net-container{
+.social-net-container {
   display: flex;
   align-items: center;
 }
-.social-net-icon{
+.social-net-icon {
   width: 20px;
   height: 20px;
 }
